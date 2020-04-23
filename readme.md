@@ -2,8 +2,8 @@
 
 ## TODO
 - [x] 安裝github
-- [] github 指令
-- [] Markdown
+- [ ] github 指令
+- [ ] Markdown
 
 ---
 1. install git http://git-scm.com/
