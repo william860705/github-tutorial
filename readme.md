@@ -12,3 +12,17 @@
     3. git commit -m 'message'
     4. git push
     5. checkout your github
+
+---
+>連結
+>>this is a [link](https://www.google.com/) to *google*.
+>>this is [covid19](covid19.csv) file.
+
+>可愛的狗狗
+>>![dog](pic/corgi.jpeg)
+
+>表格
+>>|A|B|C|
+>>|---|---|---|
+>>|aa|bb|cc|
+>>|zz|qq|bb|
