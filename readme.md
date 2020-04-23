@@ -1,7 +1,7 @@
 ### This is a tutorial of using github
 
 ## TODO
-- [v] 安裝github
+- [x] 安裝github
 - [] github 指令
 - [] Markdown
 
