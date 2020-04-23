@@ -8,9 +8,9 @@
 ---
 ## github指令
 - config
-    >git config --global user.name myusername   
-    >git config --global user.email myemail  
-    >git config --global github.user myusername  
+    - git config --global user.name myusername   
+    - git config --global user.email myemail  
+    - git config --global github.user myusername  
 - clone from others
     1. git clone {url}
 - upload to yours
