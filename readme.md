@@ -6,6 +6,19 @@
 - [x] 網頁爬蟲
 - [x] github
 
+## 貪食蛇
+![snake](pic/snake.png)
+
+How to run  
+> cd snake_game  
+> python snake.py  
+
+## 網頁
+![web](pic/webpage.png)
+
+How to run  
+> 1. 找到 web_design 資料夾
+> 2. 把index.html 用網頁打開  
 
 
 
