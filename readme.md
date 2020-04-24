@@ -1,51 +1,28 @@
-# This is a tutorial of using github
+## 貪食蛇
+![snake](pic/snake.png)
 
-## TODO
-- [x] 安裝github
-- [ ] github 指令
-- [ ] Markdown
+how to use
+> cd snake_game  
+> python snake.py  
 
----
-## github指令
-- config
-    - git config --global user.name myusername   
-    - git config --global user.email myemail  
-    - git config --global github.user myusername  
-- clone from others
-    - git clone {url}
-- update repo
-    - git pull
-- upload to yours
-    1. **git status**
-    2. **git add ***
-    3. **git commit -m 'message'**
-    4. **git push**
-    5. **checkout your github**
+## 網頁設計
+![web](pic/web.png)
 
----
-## Markdown語法
-連結
->this is a [link](https://www.google.com/) to *google*.  
->this is [covid19](covid19.csv) file.
+how to launch
+> 1. 找到 web_design  
+> 2. 把index.htnl 用網頁打開  
 
-可愛的狗狗
->![dog](pic/corgi.jpeg)
-> [影片](https://youtu.be/yw-s6OSd51I)
+## 網頁爬蟲
+練習: ptt nba 版 [結果] (web_spider/nba.csv)  
 
-可愛的貓貓
-> ![cat](pic/cat.jpeg)
-> [here](https://youtu.be/n2OEHlkCXio)
+## 資料分析
+練習: [covid19病例](pandas/covid19.csv)  
 
-表格
->|A|B|C|
+
+What we used
+>|專案|語言|工具|
 >|---|---|---|
->|aa|bb|cc|
->|zz|qq|bb|
-
-
-有關動物的Youtube頻道
->|名稱|類型|連結|
->|---|---|---|
->|老人與狗|狗|[連結](https://www.youtube.com/channel/UCZqi-Vq105BcjdttAY3cJVQ)|
->|豆漿|貓|[連結](https://www.youtube.com/channel/UCiXuTOccGliVKpcL1qQWMPg)|
->|華農兄弟|竹鼠|[連結](https://www.youtube.com/channel/UCjEGRKDfUOel8Hp9Iumw5NQ)|
+>|貪食蛇|python|pygame|
+>|網頁|html css javascript|vscode|
+>|爬蟲|python|BeautifulSoup|
+>|分析|python|pandas|

@@ -1,0 +1,219 @@
+<html>
+    <style>
+        /* 樣式  */
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: ivory;
+            text-align: center;
+        }
+        table{
+            margin-left: auto;
+            margin-right: auto;
+            /* 置中   */
+            padding: 5px;
+        }
+        table td{
+            padding: 3px 3px;
+            border: solid 1px black;
+            font-size: 24px;
+            /* 時薪的黑色邊界 */
+        }
+        #menu{
+            /* #: id命名的元素 */
+            background-color: #ABCDEF;
+            /* background-color: rgb(123, 256, 222);  */
+        }
+        .menu_li{
+            /* .找class命名的元素 */
+            display: inline-block; 
+            /* 橫向排列 */
+            margin: 0px 5px;
+            /* 縱向、橫向 */
+        }
+        .menu_li button{
+            font-size: 24px;
+            border-radius: 10px;
+        }
+        .menu_li button:hover{
+            /* 滑鼠懸浮 */
+            background-color: lightgreen;
+        }
+        .card {
+            width: 800px;
+            height: auto;
+            background-color: pink;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+            border: solid 2px black;
+            border-radius: 6px;
+            box-shadow:0 0 15px rgba(0,0,0,2);
+        }
+    </style>
+    <head>
+        <!-- 背景設定 -->
+        <meta charset="UTF-8">
+    </head>
+    <title>我的名片</title>
+    <body>
+        <!-- tag -->
+        <div id="menu">
+            <ul>
+                <!-- list串列 -->
+                <li class="menu_li" id="menu1"> <button> 基本資料</button></li>
+                <!-- button:按鈕 -->
+                <li class="menu_li" id="menu2"> <button> 學歷</button></li>
+                <li class="menu_li" id="menu3"> <button> 技能</button></li>
+                <li class="menu_li" id="menu4"> <button> 自我介紹</button></li>
+                <li class="menu_li" id="menu5"> <button> 作品</button></li>
+            </ul>
+        </div>
+        <div  class="card" id="self">
+            <!-- division分區 -->
+            <h1> 名片</h1> 
+            <!-- h1~6標題 -->
+            <h2> William</h2>
+            <h2> <i>0963219***</i></h2>
+            <!-- i:斜體 -->
+            <h2> william******@gmail.com</h2>
+            <img src="dog.jpeg" width="240px" height="160px">
+            <hr>
+            <!-- 切割線  -->
+        </div>
+        <div class="card" id="school">
+            <h2> <u>學歷</u> </h2>
+            <!-- u:underline -->
+            <h3> 國立台灣大學</h3>
+            <h3> <a href="http://web.cs.nthu.edu.tw/">電機所</a></h3>
+            <!-- a:連結 -->
+            <br>
+            <!-- 空行 -->
+        </div>
+        <div  class="card" id="skill">
+            <h2> <u>技能</u> </h2>
+            <table>
+                <!-- 表格 -->
+                <tr>
+                <!-- 表格裡面的行 -->
+                    <td> 程式語言</td>
+                    <!-- 資料 -->
+                    <td> python</td>
+                    <td> html</td>
+                </tr>
+                <tr>
+                    <td> 體育</td>
+                    <td> 籃球</td>
+                    <td> 重訓</td>
+                    <td> 手指運動</td>
+                </tr>
+                <tr>
+                    <td> 語言</td>
+                    <td> 中文</td>
+                    <td> 英文</td>
+                    <td> 西班牙文</td>
+                </tr>               
+            </table>
+        </div>
+
+        <div  class="card" id="introduction">
+            <h2> <u>自我介紹</u> </h2> 
+            <p> I'm from Taiwan.</p>
+            <!-- paragraph段落 -->
+            <p> Taiwan no.1!!!!</p>
+        </div>
+
+        <div  class="card" id="production">
+            <div>
+                <label for="videos">Choose a Video:</label>
+
+                <select onchange = "changed();" id="yt-source">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <iframe src="https://www.youtube.com/embed/" id='youtube'>我的作品</iframe>
+        </div>
+        <script>
+                var sel = document.getElementById('yt-source');
+                //var selected = sel.options[sel.selectedIndex].value;
+                //console.log(selected)
+                urls = ["https://www.youtube.com/embed/Mshz9DxQLbE", "https://www.youtube.com/embed/MSL8NC12nfc", "https://www.youtube.com/embed/lIY92X3kxsQ"]
+                document.getElementById('youtube').src = urls[sel.selectedIndex]
+                function changed(){
+                    //selected = sel.options[sel.selectedIndex].value;
+                    //console.log(selected)
+                    document.getElementById('youtube').src = urls[sel.selectedIndex]
+                    console.log(document.getElementById('youtube').src)
+                }
+                var menu1 = document.getElementById("menu1");
+                var menu2 = document.getElementById("menu2");
+                var menu3 = document.getElementById("menu3");
+                var menu4 = document.getElementById("menu4");
+                var menu5 = document.getElementById("menu5");
+                var self = document.getElementById("self");
+                var school = document.getElementById("school");
+                var skill = document.getElementById("skill");
+                var introduction = document.getElementById("introduction");
+                var production = document.getElementById("production");
+                
+
+                menu1.addEventListener("click", click1);
+                menu2.addEventListener("click", click2);
+                menu3.addEventListener("click", click3);
+                menu4.addEventListener("click", click4);
+                menu5.addEventListener("click", click5);
+                function click1(){
+                    self.style.display = "block";
+                    school.style.display = "none";
+                    skill.style.display = "none";
+                    introduction.style.display = "none";
+                    production.style.display = "none";
+                }
+                function click1(){
+                    self.style.display = "block";
+                    school.style.display = "none";
+                    skill.style.display = "none";
+                    introduction.style.display = "none";
+                    production.style.display = "none";
+                }
+                function click2(){
+                    self.style.display = "none";
+                    school.style.display = "block";
+                    skill.style.display = "none";
+                    introduction.style.display = "none";
+                    production.style.display = "none";
+                }
+                function click3(){
+                    self.style.display = "none";
+                    school.style.display = "none";
+                    skill.style.display = "block";
+                    introduction.style.display = "none";
+                    production.style.display = "none";
+                }
+                function click4(){
+                    self.style.display = "none";
+                    school.style.display = "none";
+                    skill.style.display = "none";
+                    introduction.style.display = "block";
+                    production.style.display = "none";
+                }
+                function click5(){
+                    self.style.display = "none";
+                    school.style.display = "none";
+                    skill.style.display = "none";
+                    introduction.style.display = "none";
+                    production.style.display = "block";
+                }
+                function test(){
+                    self.style.display = "block";
+                    school.style.display = "none";
+                    skill.style.display = "none";
+                    introduction.style.display = "none";
+                    production.style.display = "none";
+                }
+                
+                window.onload = test();
+        </script>
+    </body>
+</html> 
