@@ -1,9 +1,14 @@
-# This is a tutorial of using github
+# My project
 
-## TODO
-- [x] 安裝github
-- [ ] github 指令
-- [ ] Markdown
+## What we learned
+- [x] 貪食蛇
+- [x] 寫網頁
+- [x] 網頁爬蟲
+- [x] github
+
+
+
+
 
 ---
 ## github指令
